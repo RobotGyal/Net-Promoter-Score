@@ -1,50 +1,24 @@
-# Data Science (1.1) Notes and Examples
+# Net Promotor Score
 
-## Table of Contents
+![image](nps.png)
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
 
-## About <a name = "about"></a>
+## Background on NPS
 
-This notebook contains my notes, examples, practice, and study from the Make School DS 1.1 course. It contains:
-+ Data Manipulation
-+ Data Visualization
-+ Common Python DS Libraries (numpy, seaborn, pandas, matplotlib)
-+ Decriptive Statistics
+"Every summer, Make School welcomes hundreds of students into the Summer Academy to study software development and build cool stuff. The management wants to make sure that students continue to be satisfied with their experience as the program scales. The main way we measure this is through Net Promoter Score (NPS), which is a tool commonly used to measure customer loyalty and promotion. You’ve seen NPS before if you’ve been asked a question like:
+“On a scale of 1 to 10, how likely are you to recommend [X] to a friend or colleague?”
 
-## Getting Started <a name = "getting_started"></a>
+NPS segments all responses between 1 and 10 into three categories based on their sentiment:
+Promoter (9 – 10)
+Passive (7 – 8)
+Detractor (1 – 6)
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+To calculate NPS, companies follow these steps:
+Segment all responses into Promoter, Passive, and Detractor categories.
+Calculate the percentage of responses in each category out of the total number of responses to the survey.
+Subtract the Detractors percentage from the Promoters percentage. This is the NPS.
 
-### Prerequisites
+In other words, NPS can be calculated with this equation:
+`NPS = (Promoters - Detractors)  (Promoters + Passives + Detractors)`
 
-What things you need to install the software and how to install them.
-
-```
-N/A
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Usage <a name = "usage"></a>
-
-Add notes about how to use the system.
+NPS can range from –100 (if everyone is a detractor) to +100 (if everyone is a promoter)."
